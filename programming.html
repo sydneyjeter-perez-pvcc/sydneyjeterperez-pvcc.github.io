@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Name: Sydney Jeter-Perez-->
+<!--PROG Purpose: Discuess Programing algoithsm and software test-->
+
+
+<head>
+    <title> Chapter 5: Prgramming Algorithms & Software Testing</title>
+</head>
+<style>
+    a {text-decoration: none;}
+    a:link {color:#ffffff}
+    a:visited {color:aqua}
+    a:hover {color:#ff8400}
+    a:active {color:#ffffff}
+</style>
+
+<body style = "background-color: #4e4f86; background-image: url('wp-rain.PNG'); font-family:Georgia, 'Times New Roman', Times, serif; color:#ffffff;">
+
+    <table border = "0" style ="width:60%; margin:auto;">
+     <tr style="color:#ffffff; background-color:#4e4f86;">
+        <h1 style = "text-align:center">Ch.5 Programming Algorithms & Software Testing</h1>
+        <h2>Phases of computer program development:</h2>
+        <ul>
+            <li>Phase 1: Understand the problem</li>
+            <li>Phase 2: Design an algorithm to solve the problem</li>
+            <li>Phase 3: Write the program code in appropriate language based on the algorithm</li>
+            <li>Phase 4: Enter the program and save</li>
+            <li>Phase 5: Execute the program</li>
+            <li>Phase 6: Test the program, find errors and debug, then retest</li>
+            <li>Phase 7: Document and evaluate the program</li>
+        </ul>
+        <h2> Programming structures:</h2>
+        <ul>
+            <li>Sequential structure: Top-down execution</li>
+            <li>Decision structures: if/then/else</li>
+            <li>Iterative (Looping):
+                <ul>
+                    <li>While loop: continue looping as long something is true</li>
+                    <li>Repeat/until loop: continue looping until something is true</li>
+                    <li>For loop: loop a given number of times
+                    </li>
+                </ul>
+            </li>
+            <li>Recursive structures:
+                <ul>
+                    <li>Repeat a set of instructions as a subtask of itself </li>
+                    <li>Repetition continues until:
+                        <ul>
+                            <li>degenerative case, which is a termination condition, is met 
+                                (degenerative case is also a "base case")
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Two classic protramming/database problems</h2>
+        <ul>
+            <li> Sorting: Descending order/Ascending order
+                <ul>
+                    <li>Sorting numbers</li>
+                    <li>Sorting strings (in accordance with ASCII values)</li>
+                </ul>
+            </li>
+            <li>Searching: find scpecific data that meet a certain criteria
+                <ul>
+                    <li>In database:
+                        <ul>
+                            <li>Filters: temporary search</li>
+                            <li>Queries: search criteria are saved so they don't have to be recreated</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Two popular search techniques:
+                <ul>
+                    <li>Sequential search: search from top to bottom or bottom to top, one item at a time</li>
+                    <li>Binary search:
+                        <ul>
+                            <li>only works if data is SORTED first, starts in the middle, then go to half of that, etc.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Two classis program goals:</h2>
+        <ul>
+            <li>Efficiency: Program takes minimal time and/or resources</li>
+            <li>Correctness: Program runs in expected ways and works for all expected conditions</li>
+        </ul>
+        <h2>Software testing and verification</h2>
+        <h3 style="text-align:center">Software testing is done to detect:</h3>
+        <style>
+            table {
+                width: 50%;
+                border-collapse: collapse;
+                background-color: #000000;
+                color: #ffffff;
+                margin: 20px auto
+            }
+            td {
+                border: 2px solid #4c4c51;
+                padding: 10 px;
+                text-align: left;
+            }
+        </style>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Architectural flaws</td>
+                </tr>
+                <tr>
+                    <td>Poor design decisions</td>
+                </tr>
+                <tr>
+                    <td>Invalid or incorrect functionality</td>
+                </tr>
+                <tr>
+                    <td>Security vulnerabilites</td>
+                </tr>
+                <tr>
+                    <td>Scalability issues</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 style ="text-align:center">Kinds of tests</h3>
+        <style>
+            table {
+                width: 50%;
+                border-collapse: collapse;
+                background-color: #000000;
+                color: #ffffff;
+                margin: 20px auto
+            }
+            td {
+                border: 2px solid #4c4c51;
+                padding: 10 px;
+                text-align: left;
+            }
+        </style>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Acceptance testing:</td>
+                    <td>Verifying whether the whole system works as intended. </td>
+                </tr>
+                <tr>
+                    <td>Integration testing:</td>
+                    <td>Ensuring that software components or functions operate together.</td>
+                </tr>
+                <tr>
+                    <td>Unit testing:</td>
+                    <td>Validating that each software unit runs as expected. A unit is the smallest testable somponent of an application. </td>
+                </tr>
+                <tr>
+                    <td>Functional testing:</td>
+                    <td>Checking functions by emulating business scenarios, based on functional requirements. Black-box testing is a common way to verify functions. </td>
+                </tr>
+                <tr>
+                    <td>Performance testing:</td>
+                    <td>Testing how the software runs under different workloads. Load testing, for example, is used to evaluate performance under real-life load conditions. </td>
+                </tr>
+                <tr>
+                    <td>Regression testing:</td>
+                    <td>Checking whether new features break or degrade functionality. Sanity testing can be used to verify menus, functions, and commands at the surface level, when there is no time for a full regression test. </td>
+                </tr>
+                <tr>
+                    <td>Stress testing:</td>
+                    <td>Testing how much strain the system can take before it fails. Stress testing is considered to by a type of non-functional testing. </td>
+                </tr>
+                <tr>
+                    <td>Usability testing:</td>
+                    <td>Validating how well a customer can use a system or web application to complete a task.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 style="text-align:center">Testing best practices:</h3>
+        <style>
+            table {
+                width: 50%;
+                border-collapse: collapse;
+                background-color: #000000;
+                color: #ffffff;
+                margin: 20px auto
+            }
+            td {
+                border: 2px solid #4c4c51;
+                padding: 10 px;
+                text-align: left;
+            }
+        </style>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Continuous testing</td>
+                    <td>Testing each build that becomes available, this type of testing enables software to be validated in realisting test environments earlier in the process, therefore, improving design and reducing risks. </td>
+                </tr>
+                <tr>
+                    <td>Configuration management</td>
+                    <td>Maintains test assets and tracks what software builds to test. These teams gain access to these assets like code, models, and test results. To ensure that the teams meets compliance requirements, good systmes include user authentication and audit trails. This also enables a more minimal administrative effort. </td>
+                </tr>
+                <tr>
+                    <td>Servic virtualization</td>
+                    <td>Simulates the services and systems that are missing or not yet completed. They can reuse, deploy, and change a configuration to test different scenarios without modifying the original environment. This practice overall helps teams reduce dependencies and test sooner. </td>
+                </tr>
+                <tr>
+                    <td>Defect or "bug tracking"</td>
+                    <td>Monitors defects through automated tools that aids in measuring their scope and impact as well as uncover related issues.  </td>
+                </tr>
+                <tr>
+                    <td>Metrics and reporting</td>
+                    <td>Allows teams to see the overall health of a project and can monitor relationships between test, development, and other project elements. </td>
+                </tr>
+            </tbody>
+        </table>
+        <li><a href ="https://www.ibm.com/topics/software-testing/">From: IBM What is software testing?</a></li>
+    </table>
+</body>
+</html>
