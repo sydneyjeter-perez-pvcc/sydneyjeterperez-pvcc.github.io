@@ -56,7 +56,7 @@ def perform_calculations():
     inst_fee = numcredits * RATE_INSTITUTION_FEE
     act_fee = numcredits * RATE_ACTIVITY_FEE
     total = tuition + inst_fee + cap_fee + act_fee + scholarship_amt
-    balance = tuition + inst_fee + cap_fee + act_fee
+    balance = total - scholarship_amt
 #calculations for other fees, total, and balance go here
 
 def display_results():
